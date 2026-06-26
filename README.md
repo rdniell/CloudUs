@@ -1,56 +1,64 @@
-# Welcome to your Expo app 👋
+# ☁️ CloudUs 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi GPS pengguna, dilengkapi nama tempat (reverse geocoding) dan tombol untuk membuka lokasi di Google Maps.
 
-## Get started
+## 📱 Fitur Native yang Dipakai
 
-1. Install dependencies
+- **GPS (expo-location)** — mengambil koordinat lokasi pengguna dengan permission flow yang benar.
 
-   ```bash
-   npm install
-   ```
+## ✅ Daftar Fitur
 
-2. Start the app
+### Level 1 — Core
+- Permission flow: request izin → cek `status === 'granted'` → ambil lokasi
+- Penolakan izin ditangani dengan Alert ramah, tidak crash
+- Tampilkan latitude/longitude pengguna
+- UI rapi menampilkan hasil cuaca & lokasi
 
-   ```bash
-   npx expo start
-   ```
+### Level 2 — Pengembangan *(✅ minimal 2 terpenuhi)*
+- 🗺️ **Buka di Maps** — tombol yang membuka koordinat di Google Maps via `Linking`
+- 💾 **Persistensi** — data lokasi & cuaca terakhir disimpan di `AsyncStorage`, dimuat otomatis saat app dibuka
 
-In the output, you'll find options to open the app in a
+### Level 3 — Bonus
+- 🌐 **GPS + API Cuaca** — integrasi dengan Open-Meteo API untuk cuaca real-time
+- 🔁 **Reverse Geocoding** — koordinat diubah menjadi nama tempat (`Location.reverseGeocodeAsync`)
+- 🔁 **Tombol Settings** — saat izin ditolak, ada tombol langsung ke Pengaturan HP
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📸 Screenshot
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+> *(Tambahkan screenshot di sini setelah testing di HP fisik)*
 
-## Get a fresh project
+1. Dialog permission izin lokasi
+   <img width="720" height="1600" alt="dialog izin" src="https://github.com/user-attachments/assets/57b6d37c-3971-44a9-8efe-2e0984c307b5" />
 
-When you're ready, run:
+2. Hasil cuaca & lokasi setelah izin diberikan
+   <img width="720" height="1600" alt="hasil" src="https://github.com/user-attachments/assets/c6003497-dfe1-44ee-9c4a-f191dfc7152d" />
 
-```bash
-npm run reset-project
-```
+3. Penanganan saat izin ditolak (Alert + tombol Settings)
+   <img width="720" height="1600" alt="penanganan penolakan" src="https://github.com/user-attachments/assets/43e78c90-e265-4207-8fc3-852340109cbe" />
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-### Other setup steps
+## 🛠️ Tech Stack
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- React Native + Expo
+- `expo-location` — GPS & reverse geocoding
+- `@react-native-async-storage/async-storage` — persistensi data
+- [Open-Meteo API](https://open-meteo.com/) — data cuaca gratis tanpa API key
 
-## Learn more
+## 🚀 Cara Menjalankan
 
-To learn more about developing your project with Expo, look at the following resources:
+\`\`\`bash
+git clone https://github.com/USERNAME/CloudUs.git
+cd CloudUs
+npm install
+npx expo start
+\`\`\`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Scan QR code yang muncul menggunakan aplikasi **Expo Go** di HP Android/iOS.
 
-## Join the community
+## 🔗 Expo Snack
 
-Join our community of developers creating universal apps.
+https://snack.expo.dev/@niell77/cloudus
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 👤 Dibuat oleh
+
+Revael Daniel 
