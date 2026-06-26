@@ -42,17 +42,6 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 - `@react-native-async-storage/async-storage` — persistensi data
 - [Open-Meteo API](https://open-meteo.com/) — data cuaca gratis tanpa API key
 
-## 🚀 Cara Menjalankan
-
-\`\`\`bash
-git clone https://github.com/USERNAME/CloudUs.git
-cd CloudUs
-npm install
-npx expo start
-\`\`\`
-
-Scan QR code yang muncul menggunakan aplikasi **Expo Go** di HP Android/iOS.
-
 ## 🔗 Expo Snack
 
 https://snack.expo.dev/@niell77/cloudus
