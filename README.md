@@ -25,13 +25,13 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 
 ## 📸 Screenshot
 
-1. Dialog permission izin lokasi
+ < Dialog permission izin lokasi
    <img width="720" height="1600" alt="dialog izin" src="https://github.com/user-attachments/assets/57b6d37c-3971-44a9-8efe-2e0984c307b5" />
 
-2. Hasil cuaca & lokasi setelah izin diberikan
+< Hasil cuaca & lokasi setelah izin diberikan
    <img width="720" height="1600" alt="hasil" src="https://github.com/user-attachments/assets/c6003497-dfe1-44ee-9c4a-f191dfc7152d" />
 
-3. Penanganan saat izin ditolak (Alert + tombol Settings)
+< Penanganan saat izin ditolak (Alert + tombol Settings)
    <img width="720" height="1600" alt="penanganan penolakan" src="https://github.com/user-attachments/assets/43e78c90-e265-4207-8fc3-852340109cbe" />
 
 
