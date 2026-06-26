@@ -35,7 +35,8 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 
 **Penanganan saat izin ditolak (Alert + tombol Settings)**
 
-<img width="720" height="1600" alt="penanganan penolakan" src="https://github.com/user-attachments
+<img width="720" height="1600" alt="penanganan penolakan" src="https://github.com/user-attachments/assets/2a37ca77-9a16-49ad-b9ad-081e073893c1" />
+
 
 
 ## 🛠️ Tech Stack
