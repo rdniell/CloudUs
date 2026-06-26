@@ -14,7 +14,7 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 - Tampilkan latitude/longitude pengguna
 - UI rapi menampilkan hasil cuaca & lokasi
 
-### Level 2 — Pengembangan *(✅ minimal 2 terpenuhi)*
+### Level 2 — Pengembangan 
 - 🗺️ **Buka di Maps** — tombol yang membuka koordinat di Google Maps via `Linking`
 - 💾 **Persistensi** — data lokasi & cuaca terakhir disimpan di `AsyncStorage`, dimuat otomatis saat app dibuka
 
@@ -24,8 +24,6 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 - 🔁 **Tombol Settings** — saat izin ditolak, ada tombol langsung ke Pengaturan HP
 
 ## 📸 Screenshot
-
-> *(Tambahkan screenshot di sini setelah testing di HP fisik)*
 
 1. Dialog permission izin lokasi
    <img width="720" height="1600" alt="dialog izin" src="https://github.com/user-attachments/assets/57b6d37c-3971-44a9-8efe-2e0984c307b5" />
