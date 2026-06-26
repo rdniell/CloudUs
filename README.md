@@ -24,7 +24,6 @@ Aplikasi React Native (Expo) yang menampilkan cuaca terkini berdasarkan lokasi G
 - 🔁 **Tombol Settings** — saat izin ditolak, ada tombol langsung ke Pengaturan HP
 
 ## 📸 Screenshot
-
 1. Dialog permission izin lokasi
    <img width="720" height="1600" alt="dialog izin" src="https://github.com/user-attachments/assets/57b6d37c-3971-44a9-8efe-2e0984c307b5" />
 
